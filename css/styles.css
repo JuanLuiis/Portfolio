@@ -25,6 +25,9 @@ body {
     padding: 30px;
     position: fixed;
 }
+
+/* LOGO CON EFECTO MAQUINA DE ESCRIBIR */
+
 .mylogo {
     display: block;
     white-space: nowrap;
@@ -45,6 +48,8 @@ body {
         border-color: transparent;
     }
 }
+
+/* FIN DEL EFECTO */
 
 .navbar .brand {
     color: #f8f9fa;
@@ -171,15 +176,19 @@ span {
 }
 
 .text-hero {
-    margin: 10px 10px;
-    padding: 20px 30px;
     border-radius: 20px;
-    height: 160px;
-    display: cover;
+    height: 165px;
+    width: 65vw;
     text-align: center;
     color: #f8f9fa;
     backdrop-filter: blur(50px);
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 2px 15px 1px rgb(0, 0, 0);
+}
+
+.text-hero2 {
+    color: floralwhite;
 }
 
 /* BOTON SKILLS */
@@ -229,17 +238,13 @@ span {
 
 /* PORTFOLIO */
 
-.porttittle {
-    border: 2px solid rgba(255, 255, 255, 0.692);
-    backdrop-filter: blur(10px);
-    height: 6vh;
+.tittle_port {
+    color: #ebebeb;
+    padding: 5px 30px;
     border-radius: 20px;
-    margin-top: 80px;
-    color: #f8f9fa;
-    text-align: center;
-    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.349);
-    margin-left: auto;
-    margin-right: auto;
+    border: 2px solid floralwhite;
+    margin-top: 1000px;
+   
 }
 
 .cardscenter {
@@ -315,78 +320,9 @@ span {
 }
 
 
-/* Footer */
+/* FOOTER */
 
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: 100vw;
-    font-family: "Open Sans";
-    padding-top: 40px;
-    color: #fff;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-}
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-.socials li{
-    margin: 0 10px;
-}
-.socials a{
-    text-decoration: none;
-    color: #fff;
-}
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
 
-}
-.socials a:hover i{
-    color: aqua;
-}
-
-.footer-bottom{
-    background: #000;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-}
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
 
 /* AUTOMATIC SCROLL BUTTON */
 
@@ -458,11 +394,11 @@ footer{
     margin-left: 5.8px;
 }
 
-.scroll-discover {
-    width: 120px;
+.scrollimg {
+    transform: scale(0.15);
     position: absolute;
-    margin-top: 30px;
-    left: 50%;
+    margin-left: 160px;
+    margin-top: -250px;
 }
 
 @keyframes wheel {
