@@ -26,7 +26,9 @@ body {
     position: fixed;
 }
 
+/*--------------------------------------*/
 /* LOGO CON EFECTO MAQUINA DE ESCRIBIR */
+/*------------------------------------*/
 
 .mylogo {
     display: block;
@@ -49,7 +51,9 @@ body {
     }
 }
 
+/*-----------------*/
 /* FIN DEL EFECTO */
+/*---------------*/
 
 .navbar .brand {
     color: #f8f9fa;
@@ -87,7 +91,9 @@ body {
     display: none;
 }
 
+/*---------------*/
 /* MAIN SECTION */
+/*-------------*/
 
 main {
     margin: 0 auto;
@@ -113,7 +119,9 @@ span {
     padding: 30px 30px;
 }
 
+/*------------------*/
 /* DOWNLOAD BUTTON */
+/*----------------*/
 
 .container-btn {
     margin: auto;
@@ -161,7 +169,9 @@ span {
     background-size: cover; 
 }
 
+/*-----------*/
 /* PARALLAX */
+/*---------*/
 
 .parallax-completo {
     margin-top: 255px;
@@ -188,10 +198,12 @@ span {
 }
 
 .text-hero2 {
-    color: floralwhite;
+    color: #f8f9fa;
 }
 
+/*---------------*/
 /* BOTON SKILLS */
+/*-------------*/
 
 .skills {
     background-color: transparent;
@@ -236,15 +248,27 @@ span {
     width: 75px;
 }
 
+/*------------*/
 /* PORTFOLIO */
+/*----------*/
+
+.cson {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: #f8f9fa;
+}
 
 .tittle_port {
-    color: #ebebeb;
-    padding: 5px 30px;
-    border-radius: 20px;
-    border: 2px solid floralwhite;
-    margin-top: 1000px;
-   
+    padding: 100px;
+    color: #f8f9fa;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.porttittle {
+    border: 2px solid white;
 }
 
 .cardscenter {
@@ -271,7 +295,7 @@ span {
 .card2,
 .card3 {
     background-size: cover;
-    background-color: #fafafa;
+    background-color: #f8f9fa;
     border-radius: 10px;
     text-align: center;
     backdrop-filter: blur(50px);
@@ -319,12 +343,13 @@ span {
     margin-right: auto;
 }
 
-
+/*---------*/
 /* FOOTER */
+/*-------*/
 
-
-
+/*--------------------------*/
 /* AUTOMATIC SCROLL BUTTON */
+/*------------------------*/
 
   html {
     scroll-behavior: smooth;
@@ -345,7 +370,7 @@ span {
     right: 30px;
     padding: 10px 17px;
     background: rgb(20, 20, 20);
-    color: rgb(240, 240, 240);
+    color: #f8f9fa;
     border: 2px solid rgb(31, 31, 31);
     border-radius: 100%;
     cursor: pointer;
@@ -360,14 +385,16 @@ span {
   .btn-scrolltop-on {
     transform: translateY(0);
   }
-  
+ 
+/*---------------------*/
 /* SCROLL TO DISCOVER */
+/*-------------------*/
 
 .mouse {
     opacity: 0.8;
     top: 53.8rem;
     position: absolute;
-    border: 2px solid white;
+    border: 2px solid #f8f9fa;
     width: 25px;
     height: 42px;
     border-radius: 85px;
@@ -377,7 +404,7 @@ span {
 
 .wheel {
     position: absolute;
-    background: white;
+    background: #f8f9fa;
     top: 20%;
     left: 50%;
     transform: translate(-50%, 20%);
@@ -388,7 +415,7 @@ span {
 }
 
 .fa-caret-down {
-    color: white;
+    color: #f8f9fa;
     position: absolute;
     margin-top: 42px;
     margin-left: 5.8px;
