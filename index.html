@@ -33,44 +33,41 @@
       </header>
 
 
-      <section id="seccion-1">
-      <main class="main" id="home">
+      <main class="main contenedor" id="seccion-1">
+        <div style="position: absolute;"></div>
         <img src="/img/WhatsApp Image 2021-03-16 at 01.14.33.png" alt="" data-aos="fade-right" data-aos-duration="1000">
         <div class="content-info" data-aos="fade-left" data-aos-duration="1000">
           <h1>I'm <span>Juan Luis</span></h1>
           <p>Let me introduce myself, my name is Juan Luis, I am currently in a web developing learning process creating this PORTFOLIO to put these languages ​​into practice..</p>
         <div class="container-btn">
-            <button class="btn-download"> <a href="/download/CV.pdf" download="CV" title="Download CV"> <i class="fas fa-download"></i></a>        CV</button>
+          <a href="/download/CV.pdf" download="CV" title="Download CV"><button class="btn-download" >  <i class="fas fa-download"></i>     CV</button></a>   
         </div>
         </div>
-        </main>
+      </main>
 
 <!-- SCROLL MOUSE ANIMATION -->
 
-        <body>
           <div class="mouse">
             <div class="wheel"></div>
             <i class="fas fa-caret-down"></i>  
           </div>
-          <span class="scrollimg"><img src="/img/scroll and discover.png" alt="" class="scroll-discover"></span>
-        </body>
-        </section>
+          <div class="scrollimg"><img src="/img/scroll and discover.png" alt="" class="scroll-discover"></div>
 
 <!-- PARALLAX -->
 
 <section id="seccion-2">
     <header class="parallax-completo">
       <div class="text-hero">
-        <span class="text-hero2"> <h2 class="parrafo" data-aos="fade-up" data-aos-duration="500" >You do like mi Job?</h2>
+        <div class="text-hero2"> <h2 class="parrafo" data-aos="fade-up" data-aos-duration="500" >Do you like mi Job?</h2>
         <p class="parrafo" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" >Click on the following button to see the skills I have mastered.</p>
       <div class="button-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
-        <button class="skills">Click Here!</button>
-         <div class="lenguajes">
+      </div>
+        <button class="skills" id="boton-skills">Click Here!</button>
+         <div class="lenguajes"> <!-- la clase para no mostrar es no-mostrar -->
            <img src="/img/html.png" alt="">
            <img src="/img/css.png" alt="">
            <img src="/img/js.png" alt="">
          </div>
-        </span>
       </div>
       </header>
     
@@ -79,12 +76,13 @@
 <body>
     <body class="cardscenter">
       <div class="tittleport">
-      <span class="tittle_port"><h2 class="porttittle">PORTFOLIO</h2></span>
+      <div class="tittle_port contenedor"><h2 class="porttittle">PORTFOLIO</h2></div>
       </div>
           <h6 class="cson">COMING SOON...</h6>
       
-      <!-- <body class="porfolio_background">
-        <div class="card_container">
+     <!--
+      <body class="porfolio_background ">
+        <div class="card_container contenedor">
           <div class="card1">
             <img class="photocode" src="/img/CARDS IMG.png" alt="">
             <h2>WEB 1</h2>
@@ -106,41 +104,30 @@
             <img class="icons" src="/img/Github.png" alt="">
             <img class="icons" src="/img/Globe.png" alt="">
           </div>
-      </div> -->
-    </body>
+      </div> 
+    </body>-->
   </section>
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>
             AOS.init();
           </script>
-</body>
 
 
 
+<!-- footer -->
 
-
-
-<!-- FOOTER
-
-<body class="asd">
   <footer>
       <div class="footer-content">
-          <h3>code opacity</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+          <p>Developed with ❤️ and 🧠</p>
           <ul class="socials">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              <a href="#"><i class="fab fa-twitter"></i></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></i></a>
           </ul>
       </div>
       <div class="footer-bottom">
-          <p>copyright &copy;2020 codeOpacity. designed by <span>nethunt</span></p>
+          <p>Copyright &copy;2021 designed by <span class="footer-text">Juan Luis</span></p>
       </div>
-  </footer>
-</body>      
-</body> -->
+  </footer>   
 
 
 
@@ -168,9 +155,6 @@
   }
 
 </script>
-</div>
-
-<!--FOOTER-->
 
   <script src="js/scripts.js"></script>
 
