@@ -195,7 +195,7 @@ span {
     width: 65vw;
     text-align: center;
     color: #f8f9fa;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(5px);
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 2px 15px 1px rgb(0, 0, 0);
@@ -220,32 +220,28 @@ span {
 
 .skills:hover {
     background-color: #f72585;
-    border: none;
+    border: 2px solid #f72585;
     border-radius: 20px;
-    font-size: 15px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.61);
 }
 
-.lenguajes {
+.skillbox {
     background-color: rgb(36, 36, 36);
     height: 90px;
     width: 30vw;
     padding: 10px;
-    display: block;
     border-radius: 20px;
-    margin: 10px auto 0 auto; 
-    opacity: 1;
-    animation: aparecer .3s forwards;
+    visibility: hidden;
+    margin: 10px auto 0 auto;
 }
 
-@keyframes aparecer {
-    from {
-        opacity: 0;
-    }
+.icovs {
+    width: 16px;
+    margin-left: 4px;
+}
 
-    to {
-        opacity: 1;
-    }
+.text_skillbox {
+    font-family: JetBrains Mono;
 }
 
 .lenguajes:hover {
@@ -254,28 +250,22 @@ span {
     visibility: visible;
 }
 
-.lenguajes img{
+.skillbox img{
     padding: 10px 10px;
     width: 70px;
     transition: all 0.4s;
 }
-.lenguajes img:hover{
+.skillbox img:hover{
     width: 75px;
 }
 
-/* Utilidad */
-
-.no-mostrar {
-    display: none;
-    transition: all .3s ease-in-out;
-}
 
 /*------------*/
 /* PORTFOLIO */
 /*----------*/
 
 .cson {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: coolvetica;
     margin-top: 100px;
     padding-bottom: 80px;
     font-size: 50px;
@@ -290,11 +280,8 @@ span {
     border-radius: 15px;
 }
 
-.porttittle {
-    padding: 8px;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 30%;
+.porttittle {   
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -368,6 +355,77 @@ span {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*-------------*/
+/* CONTACT */
+/*-----------*/
+
+.contenedor-contact {
+    font-family: cream DEMO;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 25%;
+    height: 50vh;
+    background-color: #f3f3f3;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    width: 70vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.snd-h2{
+    margin-bottom: 40px;
+    color: #118fd1;
+}
+
+.send {
+    background-color: #118fd1;
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 6px;
+    width: 140px;
+    color: #f8f9fa;
+    border: none;
+    transition: all 0.3s;
+}
+
+.send:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    padding: 6px;
+    width: 140px;
+    color: #118fd1;
+    border: 2px solid #118fd1;
+}
+
+.input {
+    background-color: transparent;
+    font-size: 14px;
+    padding: 5px;
+    width: 300px;
+    transition: all 1s;
+    border: none;
+    border-bottom: 2px solid #118fd1;
+    margin-bottom: 15px;
+}
+
+.input:focus {
+    background-color: #e9e9e93d;
+    border-radius: 5px;
+    border: 3px solid #f8f9fa;
+}
+
 
 /*---------*/
 /* FOOTER */

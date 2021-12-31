@@ -61,13 +61,13 @@
         <div class="text-hero2"> <h2 class="parrafo" data-aos="fade-up" data-aos-duration="500" >Do you like mi Job?</h2>
         <p class="parrafo" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" >Click on the following button to see the skills I have mastered.</p>
       <div class="button-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+        <input type="button" class="skills" id="skills" onclick="mostrar_ocultar(this);" value="Click Here!"/>
       </div>
-        <button class="skills" id="boton-skills">Click Here!</button>
-         <div class="lenguajes"> <!-- la clase para no mostrar es no-mostrar -->
+         <div class="skillbox" id="skillbox">
            <img src="/img/html.png" alt="">
            <img src="/img/css.png" alt="">
            <img src="/img/js.png" alt="">
-         </div>
+          </div>
       </div>
       </header>
     
@@ -76,12 +76,13 @@
 <body>
     <body class="cardscenter">
       <div class="tittleport">
-      <div class="tittle_port contenedor"><h2 class="porttittle">PORTFOLIO</h2></div>
+      <div class="tittle_port contenedor"><h2 class="porttittle">PORTFOLIO</h2>
+      </div>
       </div>
           <h6 class="cson">COMING SOON...</h6>
-      
-     <!--
-      <body class="porfolio_background ">
+
+
+  <!-- <body class="porfolio_background ">
         <div class="card_container contenedor">
           <div class="card1">
             <img class="photocode" src="/img/CARDS IMG.png" alt="">
@@ -105,7 +106,24 @@
             <img class="icons" src="/img/Globe.png" alt="">
           </div>
       </div> 
-    </body>-->
+    </body> 
+
+<!-- contact -->
+
+<section id="seccion-4">
+<div class="contenedor-contact">
+  <form>
+    <h2 class="snd-h2">Send me a message</h2>
+        <input class="input" type="text" placeholder="Name" name="Name" required>
+        <input class="input" type="text" placeholder="E-mail" name="E-mail" required>
+        <input class="input" type="text" placeholder="Concept" name="Concept" required>
+        <textarea class="input" placeholder="Write your message here..." name="Message" required></textarea>
+        <input type="submit" class="send" value="Send Message" onclick="alerta()">
+  </form>
+</div>
+</section>
+
+
   </section>
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>
@@ -118,10 +136,10 @@
 
   <footer>
       <div class="footer-content">
-          <p>Developed with ❤️ and 🧠</p>
+          <p>Developed with ❤️ and <img src="/img/VS Code.png" class="icovs"></p>
           <ul class="socials">
-              <a href="#"><i class="fab fa-twitter"></i></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></i></a>
+              <a href="https://twitter.com/JuanLuiss_" target="_blank"><i class="fab fa-twitter"></i></i></a>
+              <a href="https://www.instagram.com/_juanluiiss/" target="_blank"><i class="fab fa-instagram"></i></i></a>
           </ul>
       </div>
       <div class="footer-bottom">
@@ -136,27 +154,11 @@
 <button class="btn-scrolltop" id="btn_scrolltop">
   <i class="fas fa-angle-up"></i>
 </button>
-<script>
-  const btn_scrolltop = document.getElementById("btn_scrolltop")
-    btn_scrolltop.addEventListener('click', () => {
-      window.scrollTo(0, 0)
-    })
 
-  window.onscroll = () => {
-    add_btn_scrolltop()
-  }
 
-  const add_btn_scrolltop = () => {
-    if (window.scrollY < 100) {
-      btn_scrolltop.classList.remove("btn-scrolltop-on")
-    } else {
-      btn_scrolltop.classList.add("btn-scrolltop-on")
-    }
-  }
 
-</script>
-
-  <script src="js/scripts.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="/js/scripts.js"></script>
 
 </body>
 </html>
