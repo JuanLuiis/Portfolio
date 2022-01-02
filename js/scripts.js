@@ -47,17 +47,3 @@ function mostrar_ocultar(input) {
         input.value="Close"
     }
 }
-
-
-/*--------------------*/
-/* SEND BUTTON ALERT */
-/*------------------*/
-/*
-function alerta() {
-  swal({
-    title: "Message sent successfully! 🚀",
-    text: "I will answer you as soon as possible",
-    icon: "success",
-    button: "Return to web"
-  });
-} */

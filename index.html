@@ -112,19 +112,50 @@
 
 <section id="seccion-4">
 <div class="contenedor-contact">
-  <form>
-    <h2 class="snd-h2">Send me a message</h2>
-        <input class="input" type="text" placeholder="Name" name="Name" required>
-        <input class="input" type="text" placeholder="E-mail" name="E-mail" required>
-        <input class="input" type="text" placeholder="Concept" name="Concept" required>
-        <textarea class="input" placeholder="Write your message here..." name="Message" required></textarea>
-        <input type="submit" class="send" value="Send Message" onclick="alerta()">
-  </form>
+  <div class="tittle">
+    <h2 class="snd-h2">CONTACT INFORMATION</h2>
+  <div class="contenedor-datos">
+    <div class="E-mail">
+      <h2><i class="fas fa-envelope-open-text"></i> E-Mail</h2>
+      <p><a href="mailto:juanluisalba.c@gmail.com" class="links">juanluisalba.c@gmail.com </a></p>
+    </div>
+    <div class="location">
+      <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
+      <p><a href="https://www.google.es/maps/place/11100+San+Fernando,+C%C3%A1diz/@36.463898,-6.2190458,14z/data=!3m1!4b1!4m5!3m4!1s0xd0dcd24afe80747:0xeaa0fa57425c3a0a!8m2!3d36.4718646!4d-6.1965948?hl=es" class="links">San Fernando, Cádiz, España</a></p>
+   </div>
+  </div>
+  </div>
 </div>
 </section>
 
+<!-- Social Media -->
 
-  </section>
+<h1 class="title">SOCIAL MEDIA</h1>
+
+    <div class="container__slider">
+
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+
+            <div class="qr">
+                <label class="qr" for="item-1" id="selector-1">
+                    <img src="/img/QR CODES/Twitter.png" class="img-qr">
+                </label>
+                <label class="qr" for="item-2" id="selector-2">
+                    <img src="/img/QR CODES/Instagram.png" class="img-qr">
+                </label>
+                <label class="qr" for="item-3" id="selector-3">
+                    <img src="/img/QR CODES/Github.png" class="img-qr">
+                </label>
+
+            </div>
+        </div>
+    </div>
+ 
+
+
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>
             AOS.init();
@@ -137,13 +168,9 @@
   <footer>
       <div class="footer-content">
           <p>Developed with ❤️ and <img src="/img/VS Code.png" class="icovs"></p>
-          <ul class="socials">
-              <a href="https://twitter.com/JuanLuiss_" target="_blank"><i class="fab fa-twitter"></i></i></a>
-              <a href="https://www.instagram.com/_juanluiiss/" target="_blank"><i class="fab fa-instagram"></i></i></a>
-          </ul>
       </div>
       <div class="footer-bottom">
-          <p>Copyright &copy;2021 designed by <span class="footer-text">Juan Luis</span></p>
+          <p>Copyright &copy;2022 designed by <span class="footer-text">Juan Luis</span></p>
       </div>
   </footer>   
 
@@ -155,9 +182,6 @@
   <i class="fas fa-angle-up"></i>
 </button>
 
-
-
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="/js/scripts.js"></script>
 
 </body>
