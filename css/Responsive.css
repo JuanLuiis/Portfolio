@@ -6,7 +6,7 @@
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 890px) {
 
     .skills {
         font-size: 13px;
@@ -22,19 +22,19 @@
 }
 
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 800px) {
 
     .content-info {   
-        width: 370px;
+        width: 300px;
     }
     .text-describe {
-       width: 300px;
+       width: 240px;
        text-align: justify;
-       font-size: 15px;
+       font-size: 13px;
     }
 
     .text-describe-tittle {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .main {
@@ -77,4 +77,14 @@
         justify-content: center;
     }
     
+    .mouse {
+        margin-top: -40px;
+    }
+    
+    .wheel {
+        width: 1px;
+        height: 4px;
+        border-radius: 15px;
+    }
+
 }
