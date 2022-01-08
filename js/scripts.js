@@ -2,13 +2,6 @@
 
 AOS.init();
 
-let menu = document.getElementById('menu');
-
-let menu_bar = document.getElementById('menu-bar');
-
-menu_bar.addEventListener('click', () => menu.classList.toggle('menu-toggle'))
-
-
 /*------------------------*/
 /* BUTTON AUTO SCROLL UP */
 /*----------------------*/
@@ -39,11 +32,11 @@ function mostrar_ocultar(input) {
     var skillbox=document.getElementById("skillbox")
 
     if (input.value=="Close") {
-        skillbox.style.visibility="hidden";
+        skillbox.style.display="none";
         input.value="Click Here!"
     }
     else {
-        skillbox.style.visibility="visible";
+        skillbox.style.display="block";
         input.value="Close"
     }
 }

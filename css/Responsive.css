@@ -1,3 +1,80 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 2000px) {
+
+    .contenedor-contact {
+        min-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .skills {
+        font-size: 13px;
+    }
+    
+    .text-hero2 {
+        font-size: 13px;
+    }
+
+    .skillbox {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+
+    .content-info {   
+        width: 370px;
+    }
+    .text-describe {
+       width: 300px;
+       text-align: justify;
+       font-size: 15px;
+    }
+
+    .text-describe-tittle {
+        font-size: 30px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .mylogo {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    .menu {
+        flex-flow: column;
+        align-items: center;
+        margin-top: 12px;
+        background-color: rgba(0, 0, 0, 0.281);
+        position: fixed;
+        left: 0;
+        top: 42.9px;
+        width: 100%;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        top: -100%;
+    }
+
+    .menu-visible {
+        left: 0%;
+    }
+
+    .container-btn {
+        display: flex;
+        justify-content: center;
+    }
     
 }
