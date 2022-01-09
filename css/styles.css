@@ -18,88 +18,154 @@ body {
     background-image: url(/img/BACKGROUND\ FIRST.jpg);
 }
 
-.navbar {
-    background-color: rgb(30, 30, 30);
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    padding: 30px;
-    position: fixed;
+/*---------*/
+/* navbar */
+/*-------*/
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 55px;
+	background-color: #181818;
 }
 
-/*--------------------------------------*/
-/* LOGO CON EFECTO MAQUINA DE ESCRIBIR */
-/*------------------------------------*/
-
-.mylogo {
-    display: block;
-    white-space: nowrap;
-    border-right: 3px solid;
-    width: 62px;
-    animation: typing 1.5s steps(10), blink .5s infinite step-end alternate;
-    overflow: hidden;
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	color: #fff;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
+nav .links {
+	float: right;
+	padding: 0;
+	margin-right: 0;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+nav .links li {
+	list-style: none;
 }
 
-/*-----------------*/
-/* FIN DEL EFECTO */
-/*---------------*/
-
-.navbar .brand {
-    color: #f8f9fa;
+nav .links a {
+	display: block;
+	padding: 1.1em;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
 }
 
-.navbar .menu {
-    grid-template-columns: 6,9;
-    display: flex;
-    margin-top: 12px;
+#nav-toggle {
+	position: absolute;
+	top: -100px;
 }
 
-.menu li {
-    list-style: none;
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.menu li a{
-    text-decoration: none;
-    border-radius: 10px;
-    margin-right: 12px;
-    font-size: 1,3em;
-    color: #f8f9fa;
-    font-weight: 200;
-    padding: 10px 20px;
+nav .icon-burger .line {
+	width: 23px;
+	height: 3px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .5s ease-in-out;
 }
 
-.menu li a:hover {
-    background-color: #919191;
-    border-radius: 20px;
-    transition: all .3s;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .10);
-    color: hsl(39, 100%, 63%);
+.home:hover {
+    color: rgb(255, 166, 0);
+    background-color: rgba(71, 71, 71, 0.226);
+    border-radius: 100px;
+    padding: 1px 10px;
 }
 
-.checkbtn {
-    display: none;
-    cursor: pointer;
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    padding: 0 auto;
-    line-height: 60px;
+.portfolio:hover {
+    color: rgb(255, 166, 0);
+    background-color: rgba(71, 71, 71, 0.226);
+    border-radius: 100px;
+    padding: 1px 10px;
 }
 
-#check {
-    display: none;
+.about:hover {
+    color: rgb(255, 166, 0);
+    background-color: rgba(71, 71, 71, 0.226);
+    border-radius: 100px;
+    padding: 1.5px 10px;
+}
+
+.contact:hover {
+    color: rgb(255, 166, 0);
+    background-color: rgba(71, 71, 71, 0.226);
+    border-radius: 100px;
+    padding: 1px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+        margin-bottom: 0%;
+		top: 55px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .6s ease-in-out;
+	}
+
+	nav .links a {
+		font-size: 20px;
+        transition: .6s;
+	}
+
+    nav .links a:hover {
+		font-size: 22px;
+	}
+
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+
+	nav .icon-burger {
+		display: block;
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(6px) rotate(225deg);
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+    
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
 }
 
 /*---------------*/
@@ -130,6 +196,18 @@ span {
     box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.78);
     border-radius: 20px;
     padding: 30px 30px;
+}
+
+.myimg {
+    width: 220px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.623);
+    border: 5px solid #f8f9fa;
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 280px;
+    margin-top: 85px;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 /*------------------*/
@@ -167,18 +245,6 @@ span {
 
 .fa-download {
     color: #f8f9fa;
-}
-
-.main img {
-    width: 220px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.623);
-    border: 5px solid #f8f9fa;
-    border-radius: 20px;
-    margin: 0 auto;
-    height: 280px;
-    margin-top: 85px;
-    background-repeat: no-repeat;
-    background-size: cover; 
 }
 
 /*-----------*/
@@ -367,9 +433,9 @@ span {
     margin-right: auto;
 }
 
-/*-------------*/
+/*----------*/
 /* CONTACT */
-/*-----------*/
+/*--------*/
 
 .contenedor-contact {
     background-image: url(/img/contact-bacground.jpg);
