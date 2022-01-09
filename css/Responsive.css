@@ -24,10 +24,11 @@
 
 @media screen and (max-width: 800px) {
 
-    .myimg {
-       width: 1rem;
-       height: 1rem;
-
+    .main img {
+       margin-top: 110px;
+       margin-bottom: -50px;
+       width: 160px;
+       height: 200px;
     }
 
     .content-info {   
