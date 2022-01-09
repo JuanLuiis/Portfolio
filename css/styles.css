@@ -490,9 +490,14 @@ span {
 /* FOOTER */
 /*-------*/
 
+#footer {
+    margin-bottom: -100px;
+}
+
 .footer-content {
     background-color: #f8f9fa;
     text-align: center;
+    margin-top: 225px;
     padding: 20px;
     box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.61);
 }
@@ -501,7 +506,6 @@ span {
     background-color: rgb(211, 211, 211);
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 0 auto;
     color: #333533;
 }
 
