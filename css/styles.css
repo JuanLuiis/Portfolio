@@ -503,6 +503,7 @@ span {
 }
 
 .footer-bottom {
+    font-size: 13px;
     background-color: rgb(211, 211, 211);
     text-align: center;
     padding-top: 5px;
@@ -516,7 +517,7 @@ span {
 .footer-text {
     color: #f72585;
     font-family: stanberry;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .footer-socialmedia {
