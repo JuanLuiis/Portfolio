@@ -440,9 +440,7 @@ span {
 /*--------*/
 
 .contenedor-contact {
-    background-image: url(/img/contact-bacground.jpg);
     display: flex;
-    background-size: cover;
     justify-content: center;
     border-radius: 20px;
     width: 22%;

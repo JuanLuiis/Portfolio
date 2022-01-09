@@ -24,6 +24,32 @@
 
 @media screen and (max-width: 800px) {
 
+    #contenedor-contact {
+        min-width: 65%;
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contenedor-datos {
+        font-size: 15px;
+        color: #f8f9fa;
+        padding: 25px 40px;
+    }
+
+    #iconcontact {
+        font-size: 25px;
+    }
+
+    #tittlecontact {
+        font-size: 25px;
+    }
+
+    #snd-h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
     .main img {
        margin-top: 110px;
        margin-bottom: -50px;
