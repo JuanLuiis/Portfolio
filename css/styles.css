@@ -166,6 +166,7 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
+    
 }
 
 /*---------------*/
@@ -299,6 +300,7 @@ span {
     background-color: #f72585;
     border: 2px solid #f72585;
     border-radius: 20px;
+    font-weight: bold;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.61);
 }
 
@@ -591,7 +593,7 @@ span {
 
 .mouse {
     opacity: 0.8;
-    top: 53.8rem;
+    top: 51rem;
     position: absolute;
     border: 2px solid #1298d7;
     width: 25px;
@@ -641,5 +643,5 @@ span {
     margin: 0 auto;
 }
 
-/* prueba */
+/* pruebas */
 

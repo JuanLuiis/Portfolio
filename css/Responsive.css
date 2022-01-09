@@ -34,6 +34,12 @@
     .content-info {   
         width: 300px;
     }
+
+    .container-btn {
+        display: flex;
+        justify-content: center;
+    }
+
     .text-describe {
        width: 240px;
        text-align: justify;
@@ -50,7 +56,26 @@
     }
     
     .mouse {
-        margin-top: -50px;
+        display: none;
+    }
+
+    .parrafo {
+        color: #0e0e0e;
+    }
+    
+    #skills {
+        color: #0e0e0e;
+        border-color: #0e0e0e;
+    }
+
+    #skills:hover {
+        color: #0e0e0e;
+        font-weight: bold;
+        border-color: #f72585;
+    }
+
+    #cson {
+        font-size: 40px;
     }
 
 }
