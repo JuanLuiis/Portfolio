@@ -21,18 +21,11 @@
     }
 
     .text-hero2 {
-        width: 250px;
+        width: 200px;
         margin-left: auto;
         margin-right: auto;
     }
-
-    #text-hero {
-        width: 1px;
-    }
-
-
 }
-
 
 @media screen and (max-width: 850px) {
 

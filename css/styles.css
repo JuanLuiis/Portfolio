@@ -170,7 +170,6 @@ nav .icon-burger .line {
     .btn-scrolltop {
         display: none;
     }
-    
 }
 
 /*---------------*/
@@ -312,7 +311,6 @@ span {
     background-color: rgb(27, 27, 27);
     height: 80px;
     width: 15vw;
-    display: flex;
     padding: 10px;
     border-radius: 20px;
     display: none;
@@ -341,7 +339,6 @@ span {
 .skillbox img:hover{
     padding: 5px;
 }
-
 
 /*------------*/
 /* PORTFOLIO */
