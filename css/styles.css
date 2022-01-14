@@ -33,15 +33,12 @@ nav {
 	background-color: #181818;
 }
 
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-    font-weight: bold;
-	align-items: center;
-	font-size: 25px;
-	color: #fff;
+.navlogo {
+    width: 40px;
+    margin: 12px;
+    margin-left: -18px;
+    float: left;
+    transition: 0.8s;
 }
 
 nav .links-nav {
@@ -120,7 +117,7 @@ nav .icon-burger .line {
     font-size: 14.5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 695px) {
     
 	nav .links-nav {
 		float: none;
@@ -169,6 +166,10 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
+
+    .btn-scrolltop {
+        display: none;
+    }
     
 }
 

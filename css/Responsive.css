@@ -19,10 +19,22 @@
     .skillbox {
         display: flex;
     }
+
+    .text-hero2 {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #text-hero {
+        width: 1px;
+    }
+
+
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
     #contenedor-contact {
         min-width: 80%;
