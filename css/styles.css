@@ -30,7 +30,12 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 55px;
+
+}
+
+nav.abajo {
 	background-color: #181818;
+    transition: 1s;
 }
 
 .navlogo {
@@ -59,7 +64,7 @@ nav .links-nav li {
 nav .links-nav a {
 	display: block;
 	padding: 5px;
-	font-size: 15px;
+	font-size: 13px;
     border-radius: 10px;
 	font-weight: bold;
 	color: #fff;
@@ -249,6 +254,14 @@ span {
 
 .fa-download {
     color: #f8f9fa;
+}
+
+#separation {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    margin-top: -350px;
 }
 
 /*-----------*/
@@ -599,7 +612,7 @@ span {
     opacity: 0.8;
     top: 51rem;
     position: absolute;
-    border: 2px solid #1298d7;
+    border: 2px solid #f8f8f8;
     width: 25px;
     height: 42px;
     border-radius: 85px;
@@ -609,7 +622,7 @@ span {
 
 .wheel {
     position: absolute;
-    background: #1298d7;
+    background: #f8f8f8;
     top: 20%;
     left: 50%;
     transform: translate(-50%, 20%);
@@ -620,7 +633,7 @@ span {
 }
 
 .fa-caret-down {
-    color: #1298d7;
+    color: #ffffff;
     position: absolute;
     margin-top: 42px;
     margin-left: 5.8px;
@@ -649,3 +662,85 @@ span {
 
 /* pruebas */
 
+.homevideo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaf2ef;
+    padding: 0 1rem;
+  }
+.texthome {
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  .texthome .text-heading {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: coolvetica;
+    letter-spacing: 2.5px;
+  }
+  
+  .texthome .text-lead {
+    font-size: 1.25rem;
+    font-weight: 0;
+    padding: 2rem 0;
+  }
+  
+  .text-lead {
+      text-transform: none;
+      font-family: coolvetica;
+      letter-spacing: 10px;
+  }
+
+
+  /* Background Video */
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Overlay */
+  .video-bg::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.842);
+  }
+  
+  .video-bg video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  
+  /* Making the text responsive */
+  @media screen and (max-width: 695px) {
+    
+    .texthome .text-heading {
+      font-size: 35px;
+    }
+
+    .texthome .text-lead {
+        font-size: 15px;
+      }
+      
+    #separation {
+        height: 200px;
+        margin-top: -145px;
+    }
+} 
