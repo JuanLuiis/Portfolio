@@ -30,7 +30,8 @@ nav {
 	top: 0;
 	padding: 10px 70px;
 	height: 55px;
-    transition: 1s;
+    transition: 3s;
+    transition: all 1s;
 }
 
 nav.abajo ul li a {
@@ -42,7 +43,6 @@ nav.abajo {
 	background-color: #f1f1f1;
     padding: 0 50px;
     margin-top: -8px;
-    transition: all 1s;
 }
 
 .navlogo {
@@ -304,7 +304,7 @@ span {
 }
 
 .text-hero {
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 25px;
     height: 165px;
     width: 65vw;
@@ -477,7 +477,7 @@ span {
 .contenedor-contact {
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 22%;
     height: 40vh;
     margin-left: auto;
@@ -496,15 +496,15 @@ span {
     box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.61);
 }
 
-.links-work {
+.linkscontact {
     text-decoration: none;
     color: #f8f9fa;
-    transition: all 0.3s;
+    transition: .5s;
 }
 
-.links-work:hover {
+.linkscontact:hover {
     color: #f8f9fa;
-    border-bottom: 2px solid #f8f9fa;
+    border-bottom: 1px solid #f8f9fa;
 }
 
 .snd-h2 {
@@ -615,6 +615,7 @@ span {
     cursor: pointer;
     transform: translateY(100px);
     transition: 0.3s;
+    z-index: 1;
   }
   
   .btn-scrolltop:hover {
